@@ -1,11 +1,10 @@
 import PopularList from "@/components/PopularList";
-import PopularTitles from "@/components/PopularTitles";
 
-export default async function HomePage() {
+export default function Movies() {
   return (
     <main>
       <PopularList>
-        <PopularTitles />
+        <>MOVIES</>
       </PopularList>
     </main>
   );

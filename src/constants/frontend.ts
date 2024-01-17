@@ -55,3 +55,21 @@ export const SOCIAL_LINKS = [
     alt: "Instagram",
   },
 ];
+
+export const FEED_CATEGORIES = [
+  {
+    title: text.shared.series,
+    label: text.shared.popular_series,
+    path: PATHS.SERIES,
+  },
+  {
+    title: text.shared.movies,
+    label: text.shared.popular_movies,
+    path: PATHS.MOVIES,
+  },
+];
+
+export const DEFAULT_PLACEHOLDER_SIZE = {
+  WIDTH: 120,
+  HEIGHT: 120,
+};
