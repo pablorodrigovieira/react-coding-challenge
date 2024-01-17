@@ -1,0 +1,48 @@
+{
+  "shared": {
+    "series": "SERIES",
+    "movies": "MOVIES",
+    "popular_titles": "Popular Titles",
+    "popular_series": "Popular Series",
+    "popular_movies": "Popular Movies"
+  },
+  "navigation": {
+    "home": "Home",
+    "terms_and_conditions": "Terms and Conditions",
+    "privacy_policy": "Privacy Policy",
+    "collection_statement": "Collection Statement",
+    "help": "Help",
+    "manage_account": "Manage Account"
+  },
+  "error": {
+    "unexpected_error": "Unexpected error",
+    "an_error_occurred": "An error occurred",
+    "something_went_wrong": "Oops, something went wrong...",
+    "failed_to_fetch": "Failed to fetch "
+  },
+  "alt": {
+    "video_placeholder": "Video placeholder",
+    "cover_image": "Cover image"
+  },
+  "buttons": {
+    "demo_streaming": "DEMO Streaming",
+    "start_your_free_trial": "Start your free trial"
+  },
+  "footer": {
+    "copyright": "Copyright ",
+    "all_rights_reserved": "DEMO Streaming. All Rights Reserved."
+  },
+  "not_found_page": {
+    "oops": "Oops!",
+    "does_not_exist": "The page you were looking for does not exist.",
+    "mistyped_address_or_page_moved": "You may have mistyped the address or the page may have moved.",
+    "take_back_home_page": "Take me back to the home page."
+  },
+  "loading_page": {
+    "loading": "Loading..."
+  },
+  "metadata": {
+    "title": "Stan - Watch TV Shows, Movies and Kids Entertainment",
+    "description": "Stan offers unlimited access to thousands of hours of entertainment, first-run exclusives, iconic series & movies. Start your 30 day free trial now."
+  }
+}
