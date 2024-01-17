@@ -21,3 +21,21 @@ export function getTitleFromPath(pathname: string): string {
     throw error;
   }
 }
+
+/**
+ * Gets the current year as a string for use in a copyright notice.
+ * @returns {string} The current year as a string.
+ */
+export function getCurrentYear(): string {
+  try {
+    const currentYear: number = new Date().getFullYear();
+    return currentYear.toString();
+  } catch (error) {
+    if (error instanceof Error) {
+      onError(error);
+    } else {
+      console.error(`${message.error.unexpected_error} on getCurrentYear`, error);
+    }
+    throw error;
+  }
+}

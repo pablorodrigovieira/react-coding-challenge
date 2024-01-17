@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import Loading from "@/app/loading";
 import Header from "@/components/Header";
 import Subheader from "@/components/Subheader";
+import Footer from "@/components/Footer";
 
 const raleway = Raleway({
   weight: ["300", "400", "500", "700"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <Subheader />
         <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Footer />
       </body>
     </html>
   );

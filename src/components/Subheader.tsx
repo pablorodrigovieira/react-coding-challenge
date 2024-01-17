@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 import ContentWrapper from "@/components/ContentWrapper";
 import message from "@/constants/languages/en.json";
-import {getTitleFromPath} from "@/utils/helpers";
+import { getTitleFromPath } from "@/utils/helpers";
 
 export default function Subheader() {
   const pathname = usePathname();
