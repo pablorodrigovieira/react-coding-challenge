@@ -1,7 +1,3 @@
 export default function Home() {
-  return (
-    <main>
-      STAN
-    </main>
-  )
+  return <main>STAN</main>;
 }
