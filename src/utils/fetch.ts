@@ -1,5 +1,5 @@
 import { onError } from "@/utils/errorHelper";
-import { filterAndOrderDataByYear } from "@/utils/filters";
+import { filterAndOrderDataByYearLimit } from "@/utils/filters";
 import { RESPONSE_CODES } from "@/constants/backend";
 import message from "@/constants/languages/en.json";
 
@@ -26,7 +26,7 @@ export const fetchFeedData = async () => {
          * Where the entry has a releaseYear attribute value >= 2010
          * Sorted by the title attribute value in ascending alphanumeric order
          * */
-        return filterAndOrderDataByYear(data.entries, 2010);
+        return filterAndOrderDataByYearLimit(data.entries, 2010);
       }
     }
   } catch (error) {

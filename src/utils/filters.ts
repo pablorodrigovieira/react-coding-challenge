@@ -8,7 +8,7 @@ import message from "@/constants/languages/en.json";
  * @param {number} yearLimit - The minimum release year for filtering entries.
  * @returns {IFeedEntry[] | undefined } - Filtered and ordered entries array or undefined based on the filters.
  */
-export const filterAndOrderDataByYear = (
+export const filterAndOrderDataByYearLimit = (
   entries: IFeedEntry[],
   yearLimit: number
 ): IFeedEntry[] | undefined => {
@@ -27,7 +27,7 @@ export const filterAndOrderDataByYear = (
     if (error instanceof Error) {
       onError(error);
     } else {
-      console.error(`${message.error.unexpected_error} on filterAndOrderDataByYear`, error);
+      console.error(`${message.error.unexpected_error} on filterAndOrderDataByYearLimit`, error);
     }
     throw error;
   }
