@@ -1,0 +1,50 @@
+.not-found {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & h2 {
+    color: var(--default-blue);
+    font-weight: bold;
+  }
+  & p {
+    margin-top: 0.5em;
+  }
+  & a {
+    color: var(--default-blue);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.grey-button {
+  background: var(--grey-background);
+  padding: 0.5em 1em;
+  color: white;
+  letter-spacing: 0.025em;
+  transition: all 0.5s ease;
+  &:hover {
+    background: var(--grey-button-hover);
+    box-shadow: var(--button-box-shadow);
+  }
+}
+
+.content-wrapper {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.loading,
+.error {
+  padding: 1rem;
+}
+
+.object-fit-cover {
+  & img {
+    object-fit: cover;
+  }
+}

@@ -1,4 +1,50 @@
+@import "shared.css";
+@import "components";
+
 :root {
+  --layout-max-width: 120rem;
+
+  /* Typography */
+  --font-size-sm: 0.75rem; /* 12px */
+  --font-size-base: 1rem; /* 16px, base */
+  --font-size-md: 1.25rem; /* 20px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 1.75rem; /* 28px */
+  --font-size-xxl: 2rem; /* 32px */
+
+  /* Colours */
+  --grey-button-hover: #505050;
+  --grey-background: #414141;
+  --dark-grey-background: #1e1e1e;
+  --light-grey: #bdbdbd;
+  --slightly-darker-grey: #999999;
+  --default-blue: #0072fb;
+
+  --default-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  --button-box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.25);
+
+  /* Gallery column size */
+  --column-size-sm: 140px;
+  --column-size-lg: 155px;
+
+  /* Default Image sizes */
+  --default-image-width: 155px;
+  --default-image-height: 233px;
+
+  /*
+    Breakpoints for mobiles
+    min-width: 320px;
+  */
+
+  /*
+    Breakpoints for larger phones and tablets
+    min-width: 480px;
+  */
+
+  /*
+    Breakpoints for larger screens than tablet
+    min-width: 1024px;
+  */
 }
 
 * {
@@ -11,4 +57,42 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section,
+main {
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+h2 {
+  font-size: var(--font-size-xl);
+}
+h3 {
+  font-size: var(--font-size-lg);
+}
+h4 {
+  font-size: var(--font-size-md);
+}
+h5 {
+  font-size: var(--font-size-base);
+}
+h6 {
+  font-size: var(--font-size-sm);
+}
+p {
+  line-height: 1.5;
 }

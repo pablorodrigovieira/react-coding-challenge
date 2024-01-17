@@ -5,6 +5,7 @@ import message from "@/constants/languages/en.json";
 
 import "@/styles/globals.css";
 import Loading from "@/app/loading";
+import Header from "@/components/Header";
 
 const raleway = Raleway({
   weight: ["300", "400", "500", "700"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={raleway.className}>
+        <Header />
         <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>
     </html>
