@@ -16,8 +16,7 @@ export const fetchFeedData = async () => {
      * Make sure you're at series or movies page.
      * */
     // throw new Error('Testing the error component.');
-
-    const res = await fetch("http://localhost:3000/api/feed");
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/feed`);
     if (res && res.status === RESPONSE_CODES.SUCCESS) {
       const data = await res.json();
       if (data && data.entries) {
