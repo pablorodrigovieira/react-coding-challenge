@@ -5,6 +5,11 @@ const PATHS = {
   MOVIES: "/movies",
 };
 
+export const PROGRAMS_TYPE = {
+  SERIES: "series",
+  MOVIES: "movie",
+};
+
 export const PAGES_TITLES = [
   { label: text.shared.popular_titles, path: "/" },
   { label: text.shared.popular_series, path: PATHS.SERIES },
@@ -72,4 +77,9 @@ export const FEED_CATEGORIES = [
 export const DEFAULT_PLACEHOLDER_SIZE = {
   WIDTH: 120,
   HEIGHT: 120,
+};
+
+export const DEFAULT_IMAGE_SIZE = {
+  WIDTH: 155,
+  HEIGHT: 233,
 };
