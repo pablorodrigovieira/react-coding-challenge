@@ -4,7 +4,8 @@
     "movies": "MOVIES",
     "popular_titles": "Popular Titles",
     "popular_series": "Popular Series",
-    "popular_movies": "Popular Movies"
+    "popular_movies": "Popular Movies",
+    "default_title": "Default Title"
   },
   "navigation": {
     "home": "Home",

@@ -1,0 +1,9 @@
+.subheader {
+  background-color: var(--grey-background);
+  box-shadow: var(--default-box-shadow);
+  color: white;
+  padding: 1em 1em;
+  & h1 {
+    font-weight: 400;
+  }
+}
