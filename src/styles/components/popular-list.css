@@ -1,0 +1,25 @@
+.popular-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--column-size-sm));
+  gap: 1em;
+  padding: 3em 1em;
+
+  /* columns size for mobiles */
+  @media only screen and (min-width: 320px) {
+    grid-template-columns: repeat(auto-fit, var(--column-size-sm));
+  }
+
+  /* columns size for larger screens than tablet */
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, var(--column-size-lg));
+  }
+  /* remove the left and right padding on the list for wider screens */
+  @media only screen and (min-width: 120rem) {
+    padding: 3em 0;
+  }
+
+  & li {
+    list-style: none;
+    min-height: var(--default-image-height);
+  }
+}
